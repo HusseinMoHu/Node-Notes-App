@@ -3,7 +3,7 @@ const chalk = require("chalk");
 const yargs = require("yargs");
 const notes = require("./notes");
 
-// Customize yargs vesion
+// Customize yargs version
 yargs.version("1.1.0");
 
 /*
@@ -11,7 +11,7 @@ yargs.version("1.1.0");
  * u are should use [describe] property in [yargs.command] object to appear the command when using --help
  *
  * yargs.parse() || console.log(yargs.argv) ==> use it to output [--help] result, without it [--help] result doesn't appear
- * use [yargs.commad()] object ==> to create a new command and give it describtion to appear in --help and give it function[handler] to excute..
+ * use [yargs.command()] object ==> to create a new command and give it description to appear in --help and give it function[handler] to execute..
  */
 
 // Create add Command
@@ -66,7 +66,7 @@ yargs.command({
   describe: "Read a Specific note",
   builder: {
     title: {
-      describe: "Read spacific note",
+      describe: "Read specific note",
       demandOption: true,
       type: "string",
     },
