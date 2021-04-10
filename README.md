@@ -4,7 +4,7 @@ Use terminal to ( **add** - **remove** - **read** - **list** ) notes.
 
 ## How to use
 
-Run ``` $ npm install ``` to add node_modules directory.
+Run ``` $ npm install ``` to reload node_modules directory.
 
 - Add a new note
 
