@@ -6,14 +6,6 @@ const notes = require("./notes");
 // Customize yargs version
 yargs.version("1.1.0");
 
-/*
- * node app.js --help ==> Show all commands you're created in app.js file
- * u are should use [describe] property in [yargs.command] object to appear the command when using --help
- *
- * yargs.parse() || console.log(yargs.argv) ==> use it to output [--help] result, without it [--help] result doesn't appear
- * use [yargs.command()] object ==> to create a new command and give it description to appear in --help and give it function[handler] to execute..
- */
-
 // Create add Command
 yargs.command({
   command: "add",
@@ -76,11 +68,5 @@ yargs.command({
   },
 });
 
-// add, remove, read, list
-
+// provide --help in console
 yargs.parse();
-
-// node app.js add --title="" --body=""
-// node app.js remove --title=""
-// node app.js list
-// node app.js read --title=""

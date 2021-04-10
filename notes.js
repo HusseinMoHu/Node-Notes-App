@@ -49,13 +49,11 @@ const readNote = (title) => {
   }
 };
 
-// Convert notes to JSON and Save is @notes.json
 const saveNotes = (notes) => {
   let dataJSON = JSON.stringify(notes);
   fs.writeFileSync("notes.json", dataJSON);
 };
 
-// This function try {Load file as JS Object} catch(error) {Create an empty array}
 const loadNote = () => {
   try {
     let dataBuffer = fs.readFileSync("notes.json");
